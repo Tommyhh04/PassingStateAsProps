@@ -27,7 +27,9 @@ function App() {
 
   return (
     <>
-      <button className="plus-10">+10</button>
+      <button className="plus-10" onClick={plus10}>
+        +10
+      </button>
       <button className="plus" onClick={add}>
         +
       </button>
@@ -36,7 +38,9 @@ function App() {
         -
       </button>
 
-      <button className="minus-10">-10</button>
+      <button className="minus-10" onClick={minus10}>
+        -10
+      </button>
     </>
   );
 }
