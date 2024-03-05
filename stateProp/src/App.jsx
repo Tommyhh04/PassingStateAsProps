@@ -6,17 +6,28 @@ function App() {
   //Gives function to the counter
   //Stores the state of count
   const [count, setCount] = React.useState(0);
-  //Makes the + button usable by increasing the number by 1
+  //Makes the plus button increase the number by 1
   function add() {
     setCount((prevCount) => prevCount + 1);
   }
 
+  //Makes the plus-10 button increase the number by 10
+  function plus10() {
+    setCount((prevCount) => prevCount + 10);
+  }
+
+  //Makes the minus button decrease the number by 1
   function minus() {
     setCount((prevCount) => prevCount - 1);
+  }
+  //Makes the minus-10 button decrease the number by 10
+  function minus10() {
+    setCount((prevCount) => prevCount - 10);
   }
 
   return (
     <>
+      <button className="plus-10">+10</button>
       <button className="plus" onClick={add}>
         +
       </button>
@@ -24,6 +35,8 @@ function App() {
       <button className="minus" onClick={minus}>
         -
       </button>
+
+      <button className="minus-10">-10</button>
     </>
   );
 }
