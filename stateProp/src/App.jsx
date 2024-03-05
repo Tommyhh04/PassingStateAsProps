@@ -1,5 +1,6 @@
 import React from "react";
 import Count from "./Count";
+import "./Styling.css";
 //This app is a simple counter. I have followed the videos from scrimba to aid me in making this. This is practice of passing state as props
 
 function App() {
